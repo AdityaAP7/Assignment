@@ -1,0 +1,537 @@
+.invoice-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f3ffe9;
+  font-family: Arial, sans-serif;
+  /* border: 1px solid #ccc; */
+  margin-top: 2%;
+  position: relative
+}
+.number {
+  margin-left: 10px;
+}
+.numinput {
+  width: 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-section {
+  text-align: right;
+
+}
+.voucherclass {
+  font-style: italic;
+  color: #8f8e8e;
+}
+.sales {
+  font-weight: bold;
+  margin-left: 40px;
+  color: #9d9582;
+}
+.price-level-section {
+  font-weight: 600;
+  color: #343347;
+}
+.voucher-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.price-level-section {
+  width: 140%;
+  margin-bottom: 10px;
+}
+
+.party-section {
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.balance-section {
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.ledger-section {
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.column-heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  /* padding: 10px; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.col {
+  flex-basis: 11%;
+  text-align: center;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px; */
+  border-bottom: 1px solid #ccc;
+}
+
+.add-item-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left {
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+}
+
+.right {
+  font-weight: bold;
+  text-align: right; /* Align text to the right */
+}
+
+.sales-manual {
+  display: inline-block;
+  background-color: #2a67b1;
+  color: white;
+  width: 130px;
+  height: 20px;
+}
+
+.no-number {
+  display: inline-block;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+.editable {
+  background-color: #feedc2;
+  padding: 5px; /* Add some padding for visual effect */
+}
+
+.editable:focus {
+  background-color: #feedc2;
+  outline: none; /* Optional: Remove the default outline */
+}
+
+.dropdown {
+  background-color: #2a67b1;
+  color: white;
+  height: 30px;
+}
+
+.custom-datepicker {
+  border: none;
+  background-color: #f3ffe9;
+  width: 75px;
+}
+.dropdown-section {
+  margin-left: 40%;
+}
+
+.nameofitemmain {
+  width: 488px;
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+}
+
+.hsnmain {
+  width: 100px;
+  border-left: none;
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  border-right: none;
+}
+.hsnmain div {
+  width: 90px;
+}
+.gstmain {
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  width: 60px;
+  border-right: none;
+}
+.qtymain {
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  border-right: none;
+}
+
+.ratetaxmain {
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  border-right: none;
+  text-align: right;
+  width: 120px;
+  text-overflow: wrap;
+
+}
+
+.ratemain {
+  border: 0.1px solid #adadadf7;
+  border-right: none;
+  background-color: #f3ffe9;
+  width: 105px;
+  text-align: right;
+}
+.permain {
+  border: 0.1px solid #adadadf7;
+  border-right: none;
+  background-color: #f3ffe9;
+  width: 60px;
+}
+
+.decmain {
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  border-right: none;
+  width: 40px;
+}
+
+.amtmain {
+  border: 0.1px solid #adadadf7;
+  background-color: #f3ffe9;
+  border-right: none;
+  width: 100px;
+  text-align: right;
+}
+
+.nameofitem {
+  width: 465px;
+  border: none;
+  background-color: #f3ffe9;
+  text-align: left;
+  height: 29px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hsncol {
+  /* border: 0.1px solid rgb(144, 144, 144); */
+  background-color: #f3ffe9;
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+  border-left: 0.5px solid #cccccc;
+  border-right: 0.5px solid #cccccc;
+}
+
+.gstcol {
+  height: 30px;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  background-color: #f3ffe9;
+  width: 40px;
+  text-align: center;
+  border-right: none;
+}
+
+.narration{
+  display: flex;
+  flex-direction: row;
+}
+.narrationinput{
+  background-color: #f3ffe9;
+  border: none;
+}
+
+
+.qtycol {
+  height: 30px;
+  border-left: 0.5px solid #cccccc;
+  background-color: #f3ffe9;
+  width: 54px;
+  text-align: center;
+  border-left: 0.5px solid #cccccc;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+
+.ratecol {
+  height: 30px;
+  border: 0.1px solid rgb(144, 144, 144);
+  background-color: #f3ffe9;
+  width: 105px;
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+  border-left: 0.5px solid #cccccc;
+  border-right: none;
+}
+
+.incrate {
+  border: 0.1px solid rgb(144, 144, 144);
+  background-color: #f3ffe9;
+  width: 88px;
+  height: 30px;
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+  border-left: 0.5px solid #cccccc;
+  border-right: none;
+}
+
+.percol {
+  height: 30px;
+  border: 0.1px solid rgb(144, 144, 144);
+  background-color: #f3ffe9;
+  width: 44px;
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-left: 0.5px solid #cccccc;
+}
+.deccol {
+  height: 30px;
+  border: 0.1px solid rgb(144, 144, 144);
+  background-color: #f3ffe9;
+  width: 40px;
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+  border-left: 0.5px solid #cccccc;
+  border-right: 0.5px solid #cccccc;
+}
+.amtcol {
+  height: 30px;
+  border: 0.1px solid rgb(144, 144, 144);
+  background-color: #f3ffe9;
+  width: 85px;
+  text-align: center;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  /* border-right:0.5px solid #cccccc; */
+  border-right: none;
+}
+.firstrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.onlinetranfer {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.debit {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.debit::placeholder {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  font: 1rem sans-serif;
+  font-style: italic;
+}
+
+.colon {
+  margin-left: 20px;
+  margin-right: 3px;
+}
+/* <div className="secondrow" contentEditable>
+      <div className="balance-section" contentEditable>
+        Current balance: 
+      </div>
+      <div className="colon2">:</div> <div className="debit">100 Dr.</div>
+      </div> */
+
+.secondrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.colon2 {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.balance-section {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #949896;
+}
+
+.thirdrow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* <div className="thirdrow">
+      <div className="ledger-section" contentEditable>
+        Sales ledger: GST Sales
+      </div>
+      <div className="colon3">:</div>
+      <input className="debit"/>
+
+      </div> */
+
+.colon3 {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.fourthrow {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.colon4 {
+  margin-left: 29px;
+  margin-right: 20px;
+}
+
+.allinput input {
+  background-color: #f3ffe9;
+  border: none;
+}
+
+.numinput {
+  background-color: #f3ffe9;
+  border: none;
+}
+
+.colon6 {
+  margin-left: 50px;
+}
+
+.sales {
+  background-color: #f3ffe9;
+  border: none;
+  font-size: 15px;
+}
+
+.input-active {
+  background-color: #fee8af;
+}
+
+input:focus {
+  background-color: #fee8af;
+}
+
+
+.dayheader {
+  margin-left: 1010px;
+  font-size: 14px;
+  /* position: absolute; */
+
+}
+
+.colon7{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.flexheading{
+  display: flex;
+  flex-direction: row;
+}
+
+.headingone{
+  width:469px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+}
+
+.headingtwo{
+  width:94px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+}
+
+.headingthree{
+  width:62px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+
+}
+
+.headingfour{
+  width:60px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+
+}
+ 
+.headingfive{
+  width:109px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+
+}
+
+.headingsix{
+  width:97px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+
+}
+
+.headingseven{
+  width:61px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+
+}
+
+.headingeight{
+  width:43px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+
+}
+
+ .headingnine{
+  width:95px;
+  border: 0.1px solid rgb(144, 144, 144);
+  border-left: none;
+  border-right: none;
+
+  
+} 
+
+.flexheading{
+  font-size:13px;
+  font-weight:bold;
+}
